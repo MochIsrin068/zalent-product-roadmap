@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Rubik;
+  src: url(../../Assets/fonts/Rubik-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e3e3e3;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dcdcdc;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Rubik;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+select:focus {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
