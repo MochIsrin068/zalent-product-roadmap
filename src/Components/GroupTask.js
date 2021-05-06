@@ -44,9 +44,7 @@ const GroupTask = ({
     });
   };
 
-  useEffect(() => {
-    fetchItemsTodo();
-  }, []);
+  useEffect(fetchItemsTodo, [fetchItemsTodo]);
 
   const createItemsTodo = () => {
     setIsLoadingCreate(true);
