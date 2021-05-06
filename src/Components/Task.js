@@ -66,8 +66,8 @@ const Task = ({
     });
   };
 
-  const moveItemsTodo = () => {
-    const targetTodoID = prevTodoID === null ? nextTodoID : prevTodoID;
+  const moveItemsTodo = (type) => {
+    const targetTodoID = type === 1 ? prevTodoID : nextTodoID;
 
     API.moveItemsTodos(todoID, data.id, targetTodoID).then((response) => {
       const messageExist = response?.message || null;
@@ -103,7 +103,7 @@ const Task = ({
           <Menu.Item
             key="1"
             icon={<ArrowRightOutlined />}
-            onClick={moveItemsTodo}
+            onClick={() => moveItemsTodo(2)}
           >
             Move Right
           </Menu.Item>
@@ -113,7 +113,7 @@ const Task = ({
           <Menu.Item
             key="1"
             icon={<ArrowLeftOutlined />}
-            onClick={moveItemsTodo}
+            onClick={() => moveItemsTodo(1)}
           >
             Move Left
           </Menu.Item>
@@ -123,14 +123,14 @@ const Task = ({
           <Menu.Item
             key="1"
             icon={<ArrowLeftOutlined />}
-            onClick={moveItemsTodo}
+            onClick={() => moveItemsTodo(1)}
           >
             Move Left
           </Menu.Item>
           <Menu.Item
             key="2"
             icon={<ArrowRightOutlined />}
-            onClick={moveItemsTodo}
+            onClick={() => moveItemsTodo(2)}
           >
             Move Right
           </Menu.Item>
