@@ -1,7 +1,7 @@
 import queryString from "query-string";
 import Authentication from "./Authentication";
 
-const BASE_URL = "";
+const BASE_URL = "https://todos-project-api.herokuapp.com";
 
 export default class API {
   static getTodos = () => {
