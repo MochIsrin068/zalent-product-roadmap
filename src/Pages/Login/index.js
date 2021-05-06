@@ -61,7 +61,7 @@ const Login = () => {
         </div>
         <Button
           label="Register"
-          onAction={() => history.push("/register")}
+          onAction={() => history.push("/v1/register")}
           type="secoundary"
         />
       </div>
