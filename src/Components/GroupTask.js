@@ -73,15 +73,14 @@ const GroupTask = ({
   return (
     <div className={`groupTask ${typeTask}`} key={data?.id || ""}>
       <div
-        className={`groupTask__chip ${
-          typeTask === "one"
-            ? "chipOne"
-            : typeTask === "two"
+        className={`groupTask__chip ${typeTask === "one"
+          ? "chipOne"
+          : typeTask === "two"
             ? "chipTwo"
             : typeTask === "three"
-            ? "chipThree"
-            : "chipFour"
-        }`}
+              ? "chipThree"
+              : "chipFour"
+          }`}
       >
         {data?.title || ""}
       </div>

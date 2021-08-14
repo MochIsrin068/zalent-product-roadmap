@@ -55,10 +55,10 @@ const Home = () => {
                       index === 0
                         ? "one"
                         : index === 1
-                        ? "two"
-                        : index === 2
-                        ? "three"
-                        : "four"
+                          ? "two"
+                          : index === 2
+                            ? "three"
+                            : "four"
                     }
                     data={item}
                     totalTodo={todo.items.length}
